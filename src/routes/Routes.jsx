@@ -25,9 +25,10 @@ function Routes() {
             element: <AdminDashboard />,
         }
     ]);
-  return (
-    <RouterProvider router={router} />
-  )
+
+    return (
+        <RouterProvider router={router} />
+    )
 }
 
-export default Routes
+export default Routes;
