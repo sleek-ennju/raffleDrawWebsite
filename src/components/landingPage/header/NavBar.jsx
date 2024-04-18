@@ -31,7 +31,7 @@ function NavBar() {
     
     const [revealNav, setRevealNav] = useState(false);
   return (
-    <section className="h-[16dvh] flex justify-between lg:justify-normal items-center mx-3 sm:mx-4 lg:mx-16">
+    <section className="h-[16dvh] flex justify-between lg:justify-normal items-center mx-3 sm:mx-4 md:mx-6 lg:mx-20">
         {/* brand logo */}
         <div className="w-full max-w-[5rem] h-auto">
             <a href="#">

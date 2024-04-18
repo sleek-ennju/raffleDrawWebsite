@@ -13,6 +13,8 @@ export default {
         buttonTop: "#fa924b",
         buttonBottom: "#f7307a",
         yellowShine: "rgb(255,180,2)",
+        cardBg: "rgb(69,49,151)",
+        cardStepBg: "rgb(131,63,240)"
       },
       fontFamily: {
         lato: ['"Lato"', 'sans-serif'],
