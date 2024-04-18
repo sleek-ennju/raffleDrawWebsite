@@ -58,7 +58,7 @@ function FeaturedTickets() {
                 <Button title="Dream Car" />
             </div>
         </div>
-        <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 mt-8 gap-8">
+        <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3 mt-8 gap-8">
           {contests.map(({winning, title, ticketCost, countdown, totalTickets}, index) => (
             <Ticket 
               key={index} 
