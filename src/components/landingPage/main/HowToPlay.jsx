@@ -1,7 +1,5 @@
 import HowToCard from "../../ui/HowToCard";
-import { TicketIcon } from "@heroicons/react/16/solid";
-import { ShoppingCartIcon } from "@heroicons/react/16/solid";
-import { TrophyIcon } from "@heroicons/react/16/solid";
+import { TicketIcon, ShoppingCartIcon, TrophyIcon } from "@heroicons/react/24/outline";
 
 function HowToPlay() {
     const steps = [

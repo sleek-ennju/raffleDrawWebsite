@@ -3,7 +3,7 @@ import HowToPlay from "./HowToPlay";
 
 function Main() {
   return (
-    <main className="mt-8 lg:mt-10 flex flex-col gap-14">
+    <main className="mt-8 lg:mt-24 flex flex-col gap-24">
         <HowToPlay />
         <FeaturedTickets />
     </main>

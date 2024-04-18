@@ -14,7 +14,9 @@ export default {
         buttonBottom: "#f7307a",
         yellowShine: "rgb(255,180,2)",
         cardBg: "rgb(69,49,151)",
-        cardStepBg: "rgb(131,63,240)"
+        cardBg2: "rgb(73,57,192)",
+        cardStepBg: "rgb(131,63,240)",
+        money: "rgb(47,190,84)",
       },
       fontFamily: {
         lato: ['"Lato"', 'sans-serif'],
