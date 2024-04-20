@@ -30,7 +30,7 @@ function HowToPlay() {
             <h2 className="text-white text-3xl font-bold font-lato uppercase"> How To Play?</h2>
             <p className="text-white text-sm font-normal font-dmsans">Follow these three easy steps!</p>
         </div>
-        <div className="flex flex-col items-center md:flex-row md:justify-evenly mt-8 gap-8">
+        <div className="flex flex-col items-center md:flex-row md:justify-evenly mt-12 gap-8">
             {/* card */}
             {steps.map(({icon, step,title, description}, index) => (
                 <HowToCard 

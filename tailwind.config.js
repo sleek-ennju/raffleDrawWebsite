@@ -17,11 +17,16 @@ export default {
         cardBg2: "rgb(73,57,192)",
         cardStepBg: "rgb(131,63,240)",
         money: "rgb(47,190,84)",
+        blackclr: "rgb(40, 40, 40)",
       },
       fontFamily: {
         lato: ['"Lato"', 'sans-serif'],
         dmsans: ['"DM Sans"', 'sans-serif']
-      }
+      },
+      screens: {
+        'xxsm': {'max': '250px'},
+        // => @media (max-width: 200px) { ... }
+      },
     },
   },
   plugins: [],

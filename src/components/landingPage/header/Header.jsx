@@ -4,7 +4,7 @@ import NavBar from "./NavBar"
 
 function Header() {
   return (
-    <header className="relative w-full md:h-dvh overflow-x-clip bg-gradient-to-b from-gradientTop to-gradientBottom">
+    <header id="header" className="relative w-full md:h-dvh overflow-x-clip bg-gradient-to-b from-gradientTop to-gradientBottom">
         <NavBar />
         <div className="mt-8 lg:mt-10">
           <HeroSection />
