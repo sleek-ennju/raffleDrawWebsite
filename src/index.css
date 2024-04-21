@@ -6,9 +6,13 @@
 .innerShadow{
     box-shadow: inset -2px 2px 14px rgb(192,34,111);
 }
-.bent-container{
+.bent-bottom-container{
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
+}
+.bent-top-container{
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
 }
 /* .testimonial{
     background-image: url('https://i.pinimg.com/564x/b4/09/ee/b409ee94ef48f517884709bc4f12eb93.jpg');

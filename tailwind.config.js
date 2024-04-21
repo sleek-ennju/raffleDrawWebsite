@@ -18,6 +18,10 @@ export default {
         cardStepBg: "rgb(131,63,240)",
         money: "rgb(47,190,84)",
         blackclr: "rgb(40, 40, 40)",
+        bgBlue: "rgb(83,150,255)",
+        bgPurple: "rgb(136,58,230)",
+        bgPrimaryBlue: "rgb(101,162,255)",
+        footerBg: "rgb(47,8,101)"
       },
       fontFamily: {
         lato: ['"Lato"', 'sans-serif'],

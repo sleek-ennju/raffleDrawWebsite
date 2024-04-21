@@ -4,7 +4,7 @@ import { StarIcon } from '@heroicons/react/16/solid';
 function Testimonials() {
   return (
     <section className='relative w-full h-full pt-12'>
-        <div  className='bent-container absolute top-0 left-0 w-full h-[70%] hidden md:block bg-gradient-to-b from-gradientTop to-gradientBottom'>
+        <div  className='bent-bottom-container absolute top-0 left-0 w-full h-[70%] hidden md:block bg-gradient-to-b from-gradientTop to-gradientBottom'>
             
         </div>
         <div className="relative z-10 flex flex-col gap-2 items-center text-center ">

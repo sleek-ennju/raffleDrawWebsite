@@ -53,7 +53,7 @@ function NavBar() {
             <ul className="flex flex-col items-center lg:flex-row gap-6 lg:gap-8">
                 {navLinks.map(({title, link}, index) => (
                     <li key={index}>
-                        <NavLink className="text-white uppercase tracking-wide font-lato text-sm md:text-base" to={link}>{title}</NavLink>
+                        <NavLink className="text-white uppercase tracking-wide font-lato text-sm md:text-base hover:text-yellowShine transition-all duration-300" to={link}>{title}</NavLink>
                     </li>
                 ))}
             </ul>

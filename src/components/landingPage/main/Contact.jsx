@@ -1,8 +1,5 @@
 import { useState } from "react";
-import { FaFacebook } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp  } from "react-icons/fa6";
 import { ImSpinner9 } from "react-icons/im";
 import Button from "../../ui/Button";
 // import emailjs from '@emailjs/browser';
@@ -157,7 +154,6 @@ const Contact = () => {
             <p className="text-base font-normal text-white font-body">Follow Us</p>
           </div>
           <div className="flex items-center gap-4">
-            
             <div className="bg-gradient-to-b from-buttonTop to-buttonBottom p-1 text-white rounded-full cursor-pointer  hover:bg-white transition-colors duration-300"><a href="/"><FaFacebook size={16}/></a></div>
             <div className="bg-gradient-to-b from-buttonTop to-buttonBottom p-1 text-white rounded-full cursor-pointer  hover:bg-white transition-colors duration-300"><a href="/"><FaInstagram size={16}/></a></div>
             <div className="bg-gradient-to-b from-buttonTop to-buttonBottom p-1 text-white rounded-full cursor-pointer  hover:bg-white transition-colors duration-300"><a href="/"><FaTwitter size={16}/></a></div>

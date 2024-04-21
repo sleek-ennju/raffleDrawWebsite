@@ -1,5 +1,6 @@
 import Header from "../landingPage/header/Header";
 import Main from "../landingPage/main/Main";
+import Footer from "../landingPage/footer/Footer";
 
 
 function LandingPage() {
@@ -7,6 +8,7 @@ function LandingPage() {
     <>
       <Header />
       <Main />
+      <Footer />
     </>
   )
 }
