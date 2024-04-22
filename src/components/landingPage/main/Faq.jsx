@@ -6,30 +6,30 @@ const Faq = () => {
 
     const faqs = [
         {
-            question:"What distinguishes Delight Media House's digital signage?",
-            answer:"Delight Media House stands out for creating immersive digital signage solutions with cutting-edge customization to maximize brand engagement and recognition in public spaces."
+            "question": "How do I enter the raffle?",
+            "answer": "You can enter the raffle by registering on our website and selecting the raffle you wish to participate in. Follow the prompts to complete your entry."
         },
         {
-            question:"How are social media and digital signage integrated in your strategies?",
-            answer:"We blend digital signage with social media to create a cohesive advertising ecosystem that amplifies brand messages and enhances audience interaction."
+            "question": "What are the prizes for the raffle?",
+            "answer": "The prizes for each raffle vary and can include items like electronics, gift cards, or exclusive experiences. Details are listed on each raffle's page."
         },
         {
-            question:"Can you create a strategy for both digital and physical ads?",
-            answer:"Yes, our consulting services design integrated strategies that effectively bridge digital and traditional advertising, ensuring message consistency across all platforms."
+            "question": "Is there a limit to how many tickets I can buy?",
+            "answer": "No, there is no limit to the number of tickets you can purchase. Buying more tickets increases your chances of winning."
         },
         {
-            question:"Which businesses benefit most from your services?",
-            answer:"Our expertise is beneficial for a wide array of clients, especially tech and e-commerce brands seeking innovative promotion in both digital and physical realms."
+            "question": "How is the winner chosen?",
+            "answer": "Winners are chosen through a random drawing from all the entries received. The draw is conducted by our automated system to ensure fairness."
         },
         {
-            question:"How do you measure campaign success?",
-            answer:"We track success using advanced analytics to measure key performance indicators, providing transparent results and actionable insights for ongoing optimization."
+            "question": "When will the winners be announced?",
+            "answer": "Winners are announced within 48 hours after the raffle closes. All participants will be notified via email and the results will be posted on our website."
         }
     ]
 
     return (
         <ScrollSurface>
-            <section id="faq" className="mx-3 sm:mx-4 md:mx-12 lg:w-[80%] lg:mx-auto">
+            <section id="faq" className="mx-3 sm:mx-4 md:mx-12 w-full lg:max-w-[80%] lg:mx-auto">
                 <h2 className="text-[2rem] font-lato font-semibold mb-4 text-center w-full md:max-w-[60%] mx-auto text-white">Quick Insights and Solutions!</h2>
                 <div className=" flex flex-col gap-6 mt-16">
                     {faqs.map(({question, answer},index)=>(

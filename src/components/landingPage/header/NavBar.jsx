@@ -64,7 +64,7 @@ function NavBar() {
     
     
   return (
-    <section className={`fixed top-0 w-full z-50 ${navBackground} h-[16dvh] flex justify-between lg:justify-normal items-center px-3 sm:px-4 md:px-6 lg:px-20 transition-all duration-200`}>
+    <section className={`fixed top-0 w-full z-50 ${navBackground} h-[14dvh] flex justify-between lg:justify-normal items-center px-3 sm:px-4 md:px-6 lg:px-20 transition-all duration-200`}>
         {/* brand logo */}
         <div className="w-full max-w-[5rem] h-auto">
             <Link to="/">
