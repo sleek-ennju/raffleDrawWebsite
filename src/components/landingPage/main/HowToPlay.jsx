@@ -24,7 +24,7 @@ function HowToPlay() {
     ]
 
   return (
-    <section className="mx-3 sm:mx-4 md:mx-6 lg:mx-20">
+    <section id="howtoplay" className="mx-3 sm:mx-4 md:mx-6 lg:mx-20">
         <div className="flex flex-col gap-2 items-center">
             <h3 className="text-yellowShine text-lg font-medium font-dmsans">Need to know about</h3>
             <h2 className="text-white text-3xl font-bold font-lato uppercase"> How To Play?</h2>

@@ -47,7 +47,7 @@ function Footer() {
         <ul className="flex justify-center flex-wrap gap-4 relative z-10  border-b border-solid border-[rgb(64,27,122)] mx-4 md:mx-12 pb-8">
             {navLinks.map(({title, link}, index) => (
                 <li  key={index}>
-                    <Link className="text-white text-sm font-lato font-semibold hover:text-yellowShine transition-all duration-300"  to={link}>{title}</Link>
+                    <Link className="text-white text-sm md:text-base font-lato font-semibold hover:text-yellowShine transition-all duration-300"  to={link}>{title}</Link>
                 </li>
             ))}
         </ul>

@@ -3,7 +3,7 @@ import client from "../../../assets/images/happyClient.png";
 
 function TopClient() {
   return (
-    <section className="testimonial mx-3 sm:mx-4 md:mx-6 lg:mx-20 ">
+    <section id="topclient" className="testimonial mx-3 sm:mx-4 md:mx-6 lg:mx-20 ">
         <div className="flex flex-col gap-2 items-center text-center">
             <h3 className="text-yellowShine text-lg font-medium font-dmsans">The Biggest Raffle Winner of The Month</h3>
             <h2 className="text-white text-3xl font-bold font-lato uppercase">Top Winning Client</h2>

@@ -1,42 +1,77 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import logo1 from "../../../assets/images/raffleLogo2.png";
 import { Bars3BottomRightIcon } from '@heroicons/react/24/outline';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { TicketIcon } from '@heroicons/react/24/outline';
 
 function NavBar() {
+    const [revealNav, setRevealNav] = useState(false);
+    const [navBackground, setNavBackground] = useState("bg-transparent");
+    const [vw, setVw] = useState(null);
+    const checkViewWidth = ()=> {
+        setVw(window.innerWidth);
+    }
+
+    // hide mobile nav bar when link is clicked
+    useEffect(()=>{
+        if(vw <= 1022){
+            setRevealNav(false);
+            setVw(null);
+        }
+    }, [vw]);
+
+    // navbar background scroll effect
+    useEffect(() => {
+        const handleScroll = () => {
+            const howtoplay = document.getElementById("howtoplay").getBoundingClientRect();
+
+            if (window.scrollY > 10 && window.scrollY < howtoplay.top + 300) {
+                setNavBackground("bg-backgroundDark")
+            } else if(window.scrollY > howtoplay.top && window.scrollY >= 500) {
+                setNavBackground("bg-gradient-to-b from-gradientTop to-gradientBottom")
+            }else{
+                setNavBackground("bg-transparent");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     const navLinks = [
         {
             title: "How it works",
-            link: "#"
+            link: "#howtoplay"
         },
         {
             title: "FAQ",
-            link: "#"
+            link: "#faq"
         },
         {
             title: "Contact",
-            link: "#"
+            link: "#contact"
         },
         {
             title: "Sign up",
-            link: "#"
+            link: "/signup"
         },
         {
             title: "Login",
-            link: "#"
+            link: "/login"
         },
     ]
     
-    const [revealNav, setRevealNav] = useState(false);
+    
   return (
-    <section className="h-[16dvh] flex justify-between lg:justify-normal items-center mx-3 sm:mx-4 md:mx-6 lg:mx-20">
+    <section className={`fixed top-0 w-full h-[17dvh] z-50 ${navBackground} ${navBackground != "bg-transparent" ? "shadow shadow-gradientTop" : ""} h-[16dvh] flex justify-between lg:justify-normal items-center px-3 sm:px-4 md:px-6 lg:px-20 transition-all duration-200`}>
         {/* brand logo */}
         <div className="w-full max-w-[5rem] h-auto">
-            <a href="#">
+            <Link to="/">
                 <img src={logo1} className="w-full transform -translate-x-3" alt="logo" />
-            </a>
+            </Link>
         </div>
 
         {/* mobile hamburger icon */}
@@ -53,7 +88,12 @@ function NavBar() {
             <ul className="flex flex-col items-center lg:flex-row gap-6 lg:gap-8">
                 {navLinks.map(({title, link}, index) => (
                     <li key={index}>
-                        <NavLink className="text-white uppercase tracking-wide font-lato text-sm md:text-base hover:text-yellowShine transition-all duration-300" to={link}>{title}</NavLink>
+                        <NavLink 
+                            className="text-white uppercase tracking-wide font-lato text-sm md:text-base hover:text-yellowShine transition-all duration-300" 
+                            to={link}
+                            onClick={checkViewWidth}
+                        >{title}
+                        </NavLink>
                     </li>
                 ))}
             </ul>

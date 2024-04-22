@@ -29,14 +29,14 @@ const Faq = () => {
 
     return (
         <ScrollSurface>
-            <section className="mx-3 sm:mx-4 md:mx-12 my-24 lg:w-[80%] lg:mx-auto">
+            <section id="faq" className="mx-3 sm:mx-4 md:mx-12 lg:w-[80%] lg:mx-auto">
                 <h2 className="text-[2rem] font-lato font-semibold mb-4 text-center w-full md:max-w-[60%] mx-auto text-white">Quick Insights and Solutions!</h2>
                 <div className=" flex flex-col gap-6 mt-16">
-                    {faqs.map((faq,index)=>(
+                    {faqs.map(({question, answer},index)=>(
                         <FaqItem
                             key={index}
-                            question={faq.question}
-                            ans={faq.answer}
+                            question={question}
+                            ans={answer}
                         />
                     ))}
                 </div>

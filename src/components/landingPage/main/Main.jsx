@@ -7,7 +7,7 @@ import TopClient from "./TopClient";
 
 function Main() {
   return (
-    <main className="mt-8 lg:mt-24 flex flex-col gap-24">
+    <main className="mt-36 lg:mt-48 flex flex-col gap-36">
         <HowToPlay />
         <FeaturedTickets />
         <TopClient />
