@@ -24,13 +24,11 @@ function NavBar() {
     // navbar background scroll effect
     useEffect(() => {
         const handleScroll = () => {
-            const howtoplay = document.getElementById("howtoplay").getBoundingClientRect();
-
-            if (window.scrollY > 10 && window.scrollY < howtoplay.top + 300) {
+            if (window.scrollY > 10 && window.scrollY <= 420) {
                 setNavBackground("bg-backgroundDark")
-            } else if(window.scrollY > howtoplay.top && window.scrollY >= 500) {
+            } else if(window.scrollY > 420 ) {
                 setNavBackground("bg-gradient-to-b from-gradientTop to-gradientBottom")
-            }else{
+            }else {
                 setNavBackground("bg-transparent");
             }
         };
@@ -66,7 +64,7 @@ function NavBar() {
     
     
   return (
-    <section className={`fixed top-0 w-full h-[17dvh] z-50 ${navBackground} ${navBackground != "bg-transparent" ? "shadow shadow-gradientTop" : ""} h-[16dvh] flex justify-between lg:justify-normal items-center px-3 sm:px-4 md:px-6 lg:px-20 transition-all duration-200`}>
+    <section className={`fixed top-0 w-full z-50 ${navBackground} h-[16dvh] flex justify-between lg:justify-normal items-center px-3 sm:px-4 md:px-6 lg:px-20 transition-all duration-200`}>
         {/* brand logo */}
         <div className="w-full max-w-[5rem] h-auto">
             <Link to="/">
