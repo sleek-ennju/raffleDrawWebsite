@@ -21,7 +21,10 @@ export default {
         bgBlue: "rgb(83,150,255)",
         bgPurple: "rgb(136,58,230)",
         bgPrimaryBlue: "rgb(101,162,255)",
-        footerBg: "rgb(47,8,101)"
+        footerBg: "rgb(47,8,101)",
+        textGrey: "#303030",
+        registerBg: "rgb(253,253,253)",
+        signupBg: "rgb(247,250,252)",
       },
       fontFamily: {
         lato: ['"Lato"', 'sans-serif'],
