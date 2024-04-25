@@ -14,13 +14,13 @@ function Login() {
   const [revealPassword, setRevealPassword] = useState(false);
 
   return (
-    <section className="relative w-full h-full bg-white px-3 sm:px-4 md:px-6 lg:px-20 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="relative w-full h-full bg-white px-3 sm:px-4 md:px-6 lg:px-20 py-16 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
       {/* background image */}
       <div className='absolute top-0 left-0 w-full h-full'>
         <img src={svgBG} alt="background shape" />
       </div>
 
-      <Link to="/" className='absolute top-2 left-4 cursor-pointer'>
+      <Link to="/" className='absolute top-2 left-2 md:left-2 cursor-pointer'>
         <ArrowLeftStartOnRectangleIcon className='w-6 h-6 text-blackclr'/>
       </Link>
 
