@@ -1,12 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { LandingPage, Login, SignUp, UserDashboard, AdminDashboard } from "../components/pages";
+import { Login, SignUp, UserDashboard, AdminDashboard } from "../components/pages";
+import MainLayout from "../components/layout/MainLayout";
 
 
 function Routes() {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <LandingPage />,
+            element: <MainLayout />,
         },
         {
             path: "/login",
