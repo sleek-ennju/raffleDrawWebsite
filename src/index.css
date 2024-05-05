@@ -46,3 +46,8 @@ html {
 .custom-shape-divider-bottom-1714338736 .shape-fill {
     fill: #100235;
 }
+
+/* dashboard styles here */
+.active-dashboard{
+    background-color: rgb(83,150,255);
+}

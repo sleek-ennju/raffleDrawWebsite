@@ -18,12 +18,12 @@ function LandingPage() {
   }, [location]);
 
   return (
-    <>
+    <div className="bg-backgroundDark h-full">
       <ScrollToHashElement />
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   )
 }
 
