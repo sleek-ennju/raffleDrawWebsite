@@ -10,7 +10,7 @@ function Winner() {
             <h2 className="text-white text-3xl font-bold font-lato uppercase">Our Latest Raffle Winner</h2>
             <p className="text-white text-sm font-normal font-dmsans ">Join us in celebrating the joy of our lucky winner. Every draw brings a new chance to win big!</p>
         </div>
-        <div className="grid grid-cols-1 justify-center mt-12 gap-8">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-evenly  mt-12 gap-8">
             <div className="relative max-w-[24rem] sm:max-w-[28rem] md:max-w-[30rem] rounded-lg">
                 <img src={car} className="w-full h-full" alt="prize" />
                 <div className="absolute top-0 left-0 w-full h-full  bg-gradient-to-b from-gradientTop to-gradientBottom opacity-75 rounded-lg">
@@ -21,9 +21,9 @@ function Winner() {
                 </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-                <h3 className="bg-gradientTop py-1 px-4 text-yellowShine w-fit rounded-lg font-lato font-semibold text-lg">Winner</h3>
-                <h4 className="text-white text-base font-lato font-medium w-[60%] text-center">Lisa Mitchell Won The AMG 450 Super Car</h4>
-                <p className="text-white text-xs font-dmsans font-light">with lucky ticket number</p>
+                <h3 className="bg-gradientTop py-1 px-4 text-yellowShine w-fit rounded-lg font-lato font-semibold text-lg lg:text-xl">Winner</h3>
+                <h4 className="text-white text-base lg:text-lg font-lato font-medium max-w-[80%] text-center">Lisa Mitchell Won The AMG 450 Super Car</h4>
+                <p className="text-white text-xs lg:text-sm font-dmsans font-light">with lucky ticket number</p>
                 <div className="relative">
                     <img src={ticket} alt="lucky ticket id" />
                     <p className="absolute text-white text-4xl font-lato font-semibold top-[.3rem] left-[36%] ">512</p>
