@@ -49,11 +49,11 @@ function HomeUser() {
       {/* mood section */}
       <div className="flex flex-col gap-5">
         <h2 className="font-lato font-bold text-3xl">Welcome back to Lucky Ralph, Jimmy</h2>
-        <div className="bg-gradient-to-r from-bgBlue to-bgPurple rounded-lg py-7 px-9 flex flex-col gap-5">
+        <div className="bg-gradient-to-b from-gradientTop to-gradientBottom rounded-lg py-7 px-9 flex flex-col gap-5">
           <h3 className="text-white font-dmsans font-bold text-lg">How are you feeling today?</h3>
           <div className="flex justify-between">
             {moods.map((mood,index)=>(
-              <div key={index} className="py-1 px-12 bg-white rounded-2xl ">{mood}</div>
+              <div key={index} className="py-1 px-20 bg-white rounded-2xl ">{mood}</div>
             ))}
           </div>
         </div>
